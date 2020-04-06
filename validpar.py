@@ -14,6 +14,10 @@ Note that an empty string is also considered valid.
 # verify that parentheses and braces have closing matches.
 # Can the string be empty? Are there additional characters? Will missmatches happen? Does an inverse representation count )(?
 # Assumption is that strings can be empty. there are no additional characters and inverse representation is not a valid string
+#Doing it this way allows me to only need to use half as much space as I would if I pushed everything onto the stack. once we find a matching pair we can just pop.
+#peeking is a constant operation so that isnt a big deal.
+#an alternative way of solving this would be to use two pointers one at the start and one at the end. we would increment each pointer until we encounter matching braces and remove them from them from the string or until pointers cross
+#anything remaning would indicate an invalid sequence.
 
 # create a stack.
 # loop over elements. insert left parentheses/brackets onto the stack.
