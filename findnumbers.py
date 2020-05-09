@@ -7,4 +7,6 @@ def findNumbers(self, nums: List[int]) -> int:
             
     return count #O(1)
    
-   #Overall runtime O(N + S)
+   #Overall runtime complexity O(N + S)
+
+# Space complexity O(1)
